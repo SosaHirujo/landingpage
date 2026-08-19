@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sosa Hirujo SRL - Cerrajería especializada en cajas fuertes empresariales y personales en República Dominicana. Apertura e instalación.">
+    <title>Sosa Hirujo SRL | Cerrajería de Cajas Fuertes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">Sosa Hirujo <span>SRL</span></a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#como-funciona">Cómo trabajamos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <h1>Cerrajería especializada en cajas fuertes empresariales y personales</h1>
+                <p>Protegemos lo que más valoras. Servicio profesional de apertura e instalación de cajas fuertes en toda República Dominicana.</p>
+                <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary">Solicitar cotización</a>
+                    <a href="tel:+18090000000" class="btn btn--secondary">Llamar ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section section--light">
+            <div class="container">
+                <h2 class="section__title">Nuestros servicios</h2>
+                <div class="services">
+                    <article class="service-card">
+                        <h3>Apertura de cajas fuertes</h3>
+                        <p>Apertura técnica de cajas fuertes personales y empresariales sin causar daños innecesarios, siempre con verificación de autorización.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Instalación de cajas fuertes</h3>
+                        <p>Fijación, anclaje y configuración de cajas fuertes de piso, pared, hotelera, oficina y doméstica con máxima seguridad.</p>
+                    </article>
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="section">
+            <div class="container about">
+                <div class="about__text">
+                    <h2 class="section__title">Sobre Sosa Hirujo SRL</h2>
+                    <p>Somos una empresa dominicana con amplia experiencia en cerrajería de cajas fuertes. Atendemos clientes personales y corporativos con responsabilidad, rapidez y total discreción.</p>
+                    <p>Trabajamos con técnicas especializadas para abrir e instalar cajas fuertes sin dañar bienes o documentación sensible. Nuestro compromiso es brindar soluciones seguras y confiables en cada intervención.</p>
+                    <ul class="about__list">
+                        <li>Atención en Verón, Punta Cana y toda La Altagracia</li>
+                        <li>Técnicos certificados y equipamiento profesional</li>
+                        <li>Servicio de urgencia disponible</li>
+                        <li>Presupuestos claros y sin sorpresas</li>
+                    </ul>
+                </div>
+                <div class="about__image" role="img" aria-label="Caja fuerte profesional">
+                    <span class="placeholder">Cajas fuertes de alta seguridad</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section section--light">
+            <div class="container">
+                <h2 class="section__title">Cómo trabajamos</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step__number">1</span>
+                        <h3>Indica tu necesidad</h3>
+                        <p>Cuéntanos el problema: apertura o instalación de caja fuerte.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step__number">2</span>
+                        <h3>Recibe una propuesta</h3>
+                        <p>Te contactamos con un presupuesto claro según el tipo de servicio, urgencia y materiales requeridos.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step__number">3</span>
+                        <h3>Resolvemos el servicio</h3>
+                        <p>Ejecutamos el trabajo de forma segura, profesional y con garantía sobre la intervención realizada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container contact">
+                <div class="contact__info">
+                    <h2 class="section__title">Contáctanos</h2>
+                    <p>Estamos listos para atenderte. Escríbenos o llámanos y te responderemos lo antes posible.</p>
+                    <ul class="contact__details">
+                        <li><strong>Teléfono:</strong> <a href="tel:+18090000000">+1 (809) 000-0000</a></li>
+                        <li><strong>WhatsApp:</strong> <a href="https://wa.me/18090000000" target="_blank" rel="noopener">+1 (809) 000-0000</a></li>
+                        <li><strong>Correo:</strong> <a href="mailto:info@sosahirujo.com">info@sosahirujo.com</a></li>
+                        <li><strong>Ubicación:</strong> Verón, Punta Cana, La Altagracia, República Dominicana</li>
+                    </ul>
+                </div>
+                <form class="contact__form" novalidate>
+                    <div class="form__group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="service">Servicio requerido</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="apertura-caja-fuerte">Apertura de caja fuerte</option>
+                            <option value="instalacion-caja-fuerte">Instalación de caja fuerte</option>
+
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Enviar solicitud</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Sosa Hirujo SRL. Todos los derechos reservados.</p>
+            <p class="footer__note">Cerrajería de cajas fuertes en República Dominicana.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

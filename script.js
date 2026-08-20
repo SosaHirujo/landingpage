@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Envío de Formulario a WhatsApp Directo (829-596-4439)
+    // 3. Envío de Formulario a WhatsApp Directo (809-697-9368)
     const contactForm = document.getElementById('contactForm');
     const toastEl = document.getElementById('toastNotification');
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Construir mensaje estructurado para WhatsApp
-            const targetPhone = '18295964439';
+            const targetPhone = '18096979368';
             const waMessage = 
                 `*SOLICITUD DE COTIZACIÓN - SOSA HIRUJO*\n\n` +
                 `👤 *Nombre / Empresa:* ${name}\n` +

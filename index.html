@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sosa Hirujo & Asocs., S.R.L. - Venta, reparación, servicio y mantenimiento a equipos de seguridad bancaria en República Dominicana. RNC: 1-01-74212-7.">
-    <title>Sosa Hirujo &amp; Asocs., S.R.L. | Seguridad Bancaria</title>
+    <meta name="description" content="Sosa Hirujo & Asocs., S.R.L. (SOHSA) - Venta, reparación, servicio y mantenimiento a equipos de seguridad bancaria en República Dominicana. RNC: 1-01-74212-7.">
+    <title>Sosa Hirujo &amp; Asocs., S.R.L. | SOHSA - Seguridad Bancaria</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -32,12 +32,39 @@
         </div>
     </div>
 
-    <!-- HEADER / NAV -->
+    <!-- HEADER / NAV CON LOGO SOHSA -->
     <header class="header">
         <div class="container header__inner">
-            <a href="#" class="brand">
-                <span class="brand__name">SOSA HIRUJO</span>
-                <span class="brand__sub">&amp; ASOCS., S.R.L.</span>
+            <a href="#" class="brand" aria-label="Sosa Hirujo & Asocs., S.R.L.">
+                <div class="brand__logo-wrap">
+                    <!-- LOGO OFICIAL SOHSA VECTORIZADO -->
+                    <svg class="sohsa-logo" viewBox="0 0 110 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="sohsaBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0022AA"/>
+                                <stop offset="100%" stop-color="#001470"/>
+                            </linearGradient>
+                            <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+                            </filter>
+                        </defs>
+                        <!-- Oval Tilted -->
+                        <ellipse cx="55" cy="75" rx="42" ry="68" transform="rotate(-26 55 75)" fill="url(#sohsaBlue)" filter="url(#logoShadow)"/>
+                        <!-- White Letters along diagonal -->
+                        <g fill="#FFFFFF" font-family="'Times New Roman', 'Georgia', 'Playfair Display', serif" font-weight="bold" text-anchor="middle">
+                            <text x="37" y="34" font-size="20">S</text>
+                            <text x="46" y="58" font-size="20">O</text>
+                            <text x="55" y="83" font-size="23">H</text>
+                            <text x="64" y="108" font-size="20">S</text>
+                            <text x="73" y="132" font-size="20">A</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="brand__text">
+                    <span class="brand__name">SOSA HIRUJO</span>
+                    <span class="brand__sub">&amp; ASOCS., S.R.L.</span>
+                    <span class="brand__tag">SEGURIDAD BANCARIA</span>
+                </div>
             </a>
 
             <nav class="nav" id="mainNav">
@@ -60,11 +87,15 @@
     <!-- HERO MINIMALISTA -->
     <section class="hero">
         <div class="container hero__inner">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                <span>RNC: 1-01-74212-7 · República Dominicana</span>
+            </div>
             <h1 class="hero__title">
                 Venta, Reparación, Servicio y Mantenimiento a <span class="highlight">Equipos de Seguridad Bancaria</span>
             </h1>
             <p class="hero__desc">
-                Soluciones técnicas especializadas en cajas fuertes, bóvedas y sistemas de seguridad física para entidades financieras, empresas y comercios en toda la República Dominicana.
+                Soluciones técnicas especializadas en cajas fuertes, bóvedas y sistemas de seguridad física para entidades financieras, empresas y comercios en todo el país.
             </p>
             <div class="hero__cta">
                 <a href="#contacto" class="btn btn--primary btn--lg">Solicitar Presupuesto</a>
@@ -80,7 +111,7 @@
     <section class="section" id="servicios">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Servicios</h2>
+                <h2 class="section-title">Servicios Especializados</h2>
                 <p class="section-desc">Atención técnica profesional y suministro de equipos normados.</p>
             </div>
 
@@ -127,16 +158,20 @@
                 <div class="about-box__content">
                     <h2 class="section-title text-left">Sobre la Empresa</h2>
                     <p>
-                        <strong>Sosa Hirujo &amp; Asocs., S.R.L.</strong> es una empresa formalmente constituida en República Dominicana (<strong>RNC: 1-01-74212-7</strong>) especializada en la ingeniería y soporte a equipos de seguridad bancaria.
+                        <strong>Sosa Hirujo &amp; Asocs., S.R.L. (SOHSA)</strong> es una empresa formalmente constituida en República Dominicana (<strong>RNC: 1-01-74212-7</strong>) especializada en la ingeniería, reparación y soporte a equipos de seguridad bancaria.
                     </p>
                     <p>
-                        Atendemos bancos, asociaciones de ahorros, cooperativas, comercios y particulares con total reserva, repuestos de alta calidad y cobertura a nivel nacional.
+                        Atendemos instituciones financieras, cadenas comerciales y particulares con estricta reserva profesional, repuestos originales y cobertura a nivel nacional.
                     </p>
                 </div>
                 <div class="about-box__meta">
                     <div class="meta-item">
                         <span class="meta-item__label">Razón Social:</span>
                         <span class="meta-item__val">Sosa Hirujo &amp; Asocs., S.R.L.</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-item__label">Distintivo:</span>
+                        <span class="meta-item__val">SOHSA</span>
                     </div>
                     <div class="meta-item">
                         <span class="meta-item__label">RNC:</span>
@@ -148,7 +183,7 @@
                     </div>
                     <div class="meta-item">
                         <span class="meta-item__label">Cobertura:</span>
-                        <span class="meta-item__val">República Dominicana</span>
+                        <span class="meta-item__val">Nacional (República Dominicana)</span>
                     </div>
                 </div>
             </div>
@@ -160,7 +195,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Contacto y Cotización</h2>
-                <p class="section-desc">Complete el formulario para enviar su requerimiento directo a nuestro WhatsApp o llámenos a nuestras líneas directas.</p>
+                <p class="section-desc">Complete el formulario para enviar su requerimiento directo a nuestro WhatsApp o comuníquese a través de nuestras líneas telefónicas.</p>
             </div>
 
             <div class="contact-grid">
@@ -180,7 +215,7 @@
 
                     <div class="contact-card contact-card--wa">
                         <h3>Atención por WhatsApp</h3>
-                        <p>Puede enviarnos imágenes o detalles de su equipo para una evaluación rápida.</p>
+                        <p>Envíenos fotografías o especificaciones del equipo para una asistencia inmediata.</p>
                         <a href="https://wa.me/18295964439?text=Hola,%20solicito%20información%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="btn btn--whatsapp btn--sm">Abrir Chat de WhatsApp</a>
                     </div>
                 </div>
@@ -213,13 +248,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="formLocation">Ubicación / Ciudad *</label>
-                                <input type="text" id="formLocation" name="location" placeholder="Ej. Santo Domingo, Santiago..." required>
+                                <input type="text" id="formLocation" name="location" placeholder="Ej. Santo Domingo, Santiago, Punta Cana..." required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="formMessage">Detalle del Requerimiento *</label>
-                            <textarea id="formMessage" name="message" rows="3" placeholder="Describa brevemente el tipo de equipo o problema..." required></textarea>
+                            <textarea id="formMessage" name="message" rows="3" placeholder="Describa brevemente el tipo de equipo, marca o problema..." required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn--primary btn--full btn--lg">
@@ -236,11 +271,25 @@
     <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__brand">
-                <span class="brand__name">SOSA HIRUJO &amp; ASOCS., S.R.L.</span>
-                <span class="footer__desc">Venta, Reparación, Servicio y Mantenimiento a Equipos de Seguridad Bancaria</span>
+                <div class="footer__brand-header">
+                    <svg class="sohsa-logo sohsa-logo--footer" viewBox="0 0 110 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <ellipse cx="55" cy="75" rx="42" ry="68" transform="rotate(-26 55 75)" fill="#002094"/>
+                        <g fill="#FFFFFF" font-family="'Times New Roman', 'Georgia', serif" font-weight="bold" text-anchor="middle">
+                            <text x="37" y="34" font-size="20">S</text>
+                            <text x="46" y="58" font-size="20">O</text>
+                            <text x="55" y="83" font-size="23">H</text>
+                            <text x="64" y="108" font-size="20">S</text>
+                            <text x="73" y="132" font-size="20">A</text>
+                        </g>
+                    </svg>
+                    <div>
+                        <span class="brand__name">SOSA HIRUJO &amp; ASOCS., S.R.L.</span>
+                        <span class="footer__desc">VENTA, REPARACIÓN, SERVICIO Y MANTENIMIENTO A EQUIPOS DE SEGURIDAD BANCARIA</span>
+                    </div>
+                </div>
             </div>
             <div class="footer__meta">
-                <span>RNC: 1-01-74212-7</span>
+                <span>RNC: <strong>1-01-74212-7</strong></span>
                 <span>&copy; <span id="currentYear"></span> Todos los derechos reservados.</span>
             </div>
         </div>

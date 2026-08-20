@@ -1,11 +1,11 @@
 /* ==========================================================================
-   SOSA HIRUJO & ASOCS., S.R.L.
+   SOSA HIRUJO & ASOCS., S.R.L. (SOHSA)
    Estilos Minimalistas y Directos - Seguridad Bancaria
    ========================================================================== */
 
 :root {
-    --primary:        #0C2461;
-    --primary-dark:   #061333;
+    --primary:        #002094;
+    --primary-dark:   #00135E;
     --primary-light:  #1E3A8A;
     --primary-subtle: #EEF2FF;
     
@@ -150,7 +150,7 @@ ul {
     color: #475569;
 }
 
-/* ─── HEADER ─── */
+/* ─── HEADER Y LOGO SOHSA ─── */
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid var(--border);
@@ -163,20 +163,43 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 74px;
 }
 
+/* Logo Brand */
 .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.brand__logo-wrap {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sohsa-logo {
+    width: 36px;
+    height: 50px;
+    transition: transform var(--transition);
+}
+
+.brand:hover .sohsa-logo {
+    transform: scale(1.04);
+}
+
+.brand__text {
     display: flex;
     flex-direction: column;
     line-height: 1.15;
 }
 
 .brand__name {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     font-weight: 800;
     color: var(--primary);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
 }
 
 .brand__sub {
@@ -184,6 +207,14 @@ ul {
     font-weight: 700;
     color: var(--gold-dark);
     letter-spacing: 0.05em;
+}
+
+.brand__tag {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+    margin-top: 1px;
 }
 
 .nav__list {
@@ -234,6 +265,27 @@ ul {
 
 .hero__inner {
     max-width: 850px;
+}
+
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.85rem;
+    background-color: var(--primary-subtle);
+    color: var(--primary);
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(0, 32, 148, 0.12);
+}
+
+.hero__badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary);
 }
 
 .hero__title {
@@ -504,20 +556,29 @@ ul {
     gap: 1.5rem;
 }
 
-.footer__brand {
+.footer__brand-header {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sohsa-logo--footer {
+    width: 32px;
+    height: 44px;
 }
 
 .footer__brand .brand__name {
     color: #FFFFFF;
     font-size: 1.05rem;
+    font-weight: 700;
+    display: block;
 }
 
 .footer__desc {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     color: #CBD5E1;
+    display: block;
+    margin-top: 2px;
 }
 
 .footer__meta {
@@ -597,7 +658,7 @@ ul {
     .nav.nav--open {
         display: flex;
         position: fixed;
-        top: 70px;
+        top: 74px;
         left: 0;
         right: 0;
         background-color: #FFFFFF;

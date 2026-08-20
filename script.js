@@ -91,4 +91,24 @@ document.addEventListener('DOMContentLoaded', () => {
             toastEl.classList.remove('show');
         }, 3500);
     }
+    // 4. Animaciones de scroll modernas (Intersection Observer)
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.section, .card, .contact-card, .contact-form-wrap').forEach(el => {
+        el.classList.add('reveal-hidden');
+        revealObserver.observe(el);
+    });
 });
